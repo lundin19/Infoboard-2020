@@ -1,6 +1,6 @@
 .middleSection {
   height: 300px;
-  padding: 12px 0 0 13px;
+  padding: 12px 0 0 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -20,14 +20,16 @@
   font-size: 50px;
   color: #fff;
   margin: auto;
+  margin-left: 20px;
 }
 
 .middleSection .info .info-header {
   display: inline-block;
   font-size: 28px;
   color: #fff;
-  margin-top: 3.5%;
+  margin-top: 2.5%;
   margin-left: 1%;
+  margin-left: 15px;
 }
 
 .middleSection #player {
@@ -118,8 +120,8 @@
 .ticker-wrap {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1% auto;
-  grid-template-columns: 1% auto;
+  -ms-grid-columns: 5% auto;
+  grid-template-columns: 5% auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -129,7 +131,7 @@
   bottom: 0;
   height: 71px;
   background-color: #414B6C;
-  width: 1399px;
+  width: 1580px;
 }
 
 .ticker-wrap img {
@@ -160,4 +162,8 @@
   padding: 0 2rem;
   font-size: 2rem;
   color: white;
+}
+
+.info-container {
+  grid-area: info;
 }

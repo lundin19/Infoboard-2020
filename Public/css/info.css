@@ -14,7 +14,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 80px;
+  margin-top: 300px;
 }
 
 .time {
@@ -203,24 +203,6 @@
 
 .data-container .weather-container .temp-summary-container .col-left {
   text-align: center;
-}
-
-.info-container {
-  grid-area: info;
-}
-
-.aktiviteter-container {
-  grid-area: aktiviteter;
-  padding-top: 12px;
-}
-
-.aktiviteter-container .header {
-  background-color: #3F4259;
-  height: 68px;
-  margin-bottom: 13px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .article .medie-container {

@@ -6,7 +6,7 @@ $duration: 80s;
 
 .middleSection{
     height: 300px;
-    padding: 12px 0 0 13px;
+    padding: 12px 0 0 0;
     box-sizing: border-box;
 
     .info{
@@ -21,15 +21,16 @@ $duration: 80s;
             font-size: 50px;
             color: $text-color;
             margin: auto;
+            margin-left: 20px;
         }
 
         .info-header {
             display: inline-block;
             font-size: 28px;
             color: $text-color;
-            margin-top:3.5%;
+            margin-top:2.5%;
             margin-left: 1%;
-            
+            margin-left: 15px;
         }
     }
     #player{
@@ -103,8 +104,8 @@ $duration: 80s;
 .ticker-wrap {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1% auto;
-    grid-template-columns: 1% auto;
+    -ms-grid-columns: 5% auto;
+    grid-template-columns: 5% auto;
     align-items: center;
     position: absolute;
     overflow: hidden;
@@ -112,7 +113,7 @@ $duration: 80s;
     bottom: 0;
     height: 71px;
     background-color: #414B6C;
-    width: 1399px;
+    width: 1580px;
     img{
         height: 71px;
         z-index: 2;
@@ -145,4 +146,7 @@ $duration: 80s;
 
   }
 
+}
+.info-container {
+    grid-area: info;
 }

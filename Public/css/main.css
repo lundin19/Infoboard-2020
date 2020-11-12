@@ -19,11 +19,13 @@ body {
 }
 
 .header h3 {
+  font-size: 28px;
   margin-left: 10px;
 }
 
 .header img {
-  height: 30px;
+  height: 50px;
+  margin-left: 10px;
 }
 
 .main-container {
@@ -36,6 +38,6 @@ body {
       grid-template-columns: 2fr 5fr 4fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  gap: 5px;
+  gap: 25px;
       grid-template-areas: "data aktiviteter info";
 }
