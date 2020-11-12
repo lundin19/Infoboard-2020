@@ -1,0 +1,33 @@
+.weather-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    font-weight: 600;
+    background-color: #3F4259;
+  }
+  
+  .weather-container .time-date-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .weather-container .temp-summary-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 40px;
+  }
+  
+  .weather-container .temp-summary-container .col-left {
+    text-align: center;
+  }
+  
