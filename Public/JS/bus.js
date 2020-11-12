@@ -54,7 +54,7 @@ let buildview = function(firstfive, currentTime){
     containerHeader.classList.add('container-header');
 
     let containerHeaderImg = document.createElement('img');
-    containerHeaderImg.src = "/img/busser.png";
+    containerHeaderImg.src = "/Public/img/busser.png";
     let containerHeaderText = document.createElement('h2');
     containerHeaderText.innerHTML = "Bus tider";
 

@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2477420e06.js" crossorigin="anonymous"></script>
     <title>Infoboard</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="/Public/css/main.css">
+    <link rel="stylesheet" href="/Public/css/aktiviteter.css">
+    <link rel="stylesheet" href="/Public/css/info.css">
+    <link rel="stylesheet" href="/Public/css/news.css">
 </head>
 <body>
     <main class="main-container">
@@ -25,22 +28,33 @@
                         <p class="summary"></p>
                     </div>
                     <div class="col-right">
-                        <img class="icon"  src="/img/svg/loading.svg"  alt="icon">
+                        <img class="icon"  src="/Public/img/svg/weather/loading.svg"  alt="icon">
                     </div>
                 </div>
             </div>
-
             <!--BUS-->
             <div id="post"></div>
 
             <!--LOGO-->
             <div class="logo-container">
-                <img class="logo" src="/logo.svg" alt="mediehuset techcollege">
+                <img class="logo" src="/Public/img/svg/logo.svg" alt="mediehuset techcollege">
             </div>
         </div>
 
+        <!--AKTIVITETER CONTAINER-->
+        <div class="aktiviteter-container">
+            <!--Header label-->
+            <div class="header">
+                <img src="/Public/img/svg/event.svg" alt="event">
+                <h3>aktiviteter</h3>
+            </div>
+            <ul id="activity-widget"></ul>
+        </div>
+        <div class="ticker-wrap">
+            <img src="/Public/img/svg/News.svg" alt="">
+        </div>
 
-        <!--INFO CONTAINER-->
+  <!--INFO CONTAINER-->
         <div class="middleSection">
             <div class="info">
                 <i class="fas fa-info-circle"></i>
@@ -50,29 +64,13 @@
             </div>
             <div id="news-container"></div>
         </div>
-    
-    
-
-        <!--AKTIVITETER CONTAINER-->
-        <div class="aktiviteter-container">
-            <!--Header label-->
-            <div class="header">
-                <img src="../img/" alt="event">
-                <h3>aktiviteter</h3>
-            </div>
-            <ul id="activity-widget"></ul>
-        </div>
-        <div class="ticker-wrap">
-            <img src="../img/News.svg" alt="">
-        </div>
-
     </main>
-    <script src="../JS/activities.js"></script>
-    <script src="../JS/bus.js"></script>
-    <script src="../JS/JS.js"></script>
-    <script src="../JS/media.js"></script>
-    <script src="../JS/news-slider.js"></script>
-    <script src="../JS/news.js"></script>
-    <script src="../JS/vejr.js"></script>
+    <script src="/Public/JS/activities.js"></script>
+    <script src="/Public/JS/bus.js"></script>
+    <script src="/Public/JS/JS.js"></script>
+    <script src="/Public/JS/media.js"></script>
+    <script src="/Public/JS/news-slider.js"></script>
+    <script src="/Public/JS/news.js"></script>
+    <script src="/Public/JS/vejr.js"></script>
 </body>
 </html>

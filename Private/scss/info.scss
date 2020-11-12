@@ -1,0 +1,230 @@
+/* Styling af Vejr */
+
+.logo-container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    .logo {
+        width: 300px;
+        display: flex;
+        margin-top: 80px;
+    }
+}
+
+.time {
+    font-size: 45px;
+}
+
+.date {
+    font-size: 45px;
+}
+
+    .temp {
+        font-size: 100px;
+        letter-spacing: 5px;
+    }
+
+    .summary {
+        font-size: 24px;
+        justify-self: start;
+        align-self: center;
+    }
+
+    .icon {
+        min-width: 220px;
+        max-width: 230px;
+        justify-self: start;
+        margin-top: -15%;
+    }
+
+// Grid boxes
+.data-container {
+    grid-area: data;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    background-color: #3F4259;
+    /* Styling af Bus tider */
+.bus-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    width: 400px;
+    color: white;
+    font-weight: 600;
+    .tid {
+        display: grid;
+        grid-template-columns: 15% 30% ;
+        grid-template-rows: 50px;
+        grid-column-gap: -20%;
+        width: 380px;
+        padding-left: 5%;
+        align-items: center;
+        text-align: center;
+        font-weight: 300;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .tid1 {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 40px;
+        grid-column-gap: 10%;
+        width: 400px;
+        align-items: center;
+        text-align: center;
+        background-color: #4D5A84;
+    }
+
+    .tid2 {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 40px;
+        grid-column-gap: 10%;
+        width: 400px;
+        text-align: center;
+        align-items: center;
+        background-color: #414B6C;
+    }
+
+    .tid3 {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 40px;
+        grid-column-gap: 10%;
+        width: 400px;
+        text-align: center;
+        align-items: center;
+        background-color: #4D5A84;
+    }
+
+    .tid4 {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 40px;
+        grid-column-gap: 10%;
+        width: 400px;
+        text-align: center;
+        align-items: center;
+        background-color: #414B6C;
+    }
+
+    .tid5 {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 40px;
+        grid-column-gap: 10%;
+        width: 400px;
+        text-align: center;
+        align-items: center;
+        background-color: #4D5A84;
+    }}
+    .weather-container {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-weight: 600;
+        background-color: #3F4259;
+        .time-date-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .temp-summary-container {
+            display: flex;
+            margin-top: 40px;
+            .col-left {
+                text-align: center;
+            }
+        }
+    }
+}
+.info-container {
+    grid-area: info;
+}
+.aktiviteter-container {
+    grid-area: aktiviteter;
+    padding-top: 12px;
+
+    .header {
+        background-color: #3F4259;
+        height: 68px;
+        margin-bottom: 13px;
+        align-items: center;
+    }
+}
+
+// Articles
+.article { 
+    .medie-container {
+        height: 300px;
+        width: 100%;
+        background-image: url('/Public/img/mg.jpg');
+        background-size: 100% 100%; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        background-origin: content-box;
+    }
+    .nyheder {
+        background-color: #414B6C;
+        padding: 10px;
+        margin:  10px 0;
+        .titel {
+            text-transform: uppercase;
+        }
+        .tekst {
+            margin-top: 20px;
+        }
+    }
+}
+    #post{
+        .bus-container{
+            width: 100%;
+            color: white;
+            font-weight: 600;
+            .container-header{
+                width: 100%;
+                height: 50px;
+                align-items: center;
+                font-weight: 300;
+                display: flex;
+                background-color: #3F4259;
+                img{
+                    margin: 0 1rem;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .container_body{
+                .container-content{
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: left;
+                    height: 40px;
+                    align-items: left;
+                    background-color: #4D5A84;
+                    h3:first-of-type {
+                        margin: 0 0 0 1rem;    
+                    }
+                    h3:last-of-type{
+                        text-align: right;
+                        margin: 0 1rem 0 0;  
+                    }
+                }
+                .container-content:first-of-type{
+                    height: 50px;
+                    h3{
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                    }
+                }
+                .container-content:nth-child(odd){
+                    background: #414B6C;
+                }
+            }
+        }
+    }
+
