@@ -106,3 +106,17 @@
 #activity-widget .card p.topic {
   width: 30%;
 }
+
+.aktiviteter-container {
+  grid-area: aktiviteter;
+  padding-top: 12px;
+}
+
+.aktiviteter-container .header {
+  background-color: #3F4259;
+  height: 68px;
+  margin-bottom: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

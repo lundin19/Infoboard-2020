@@ -15,10 +15,12 @@ body {
     padding: 10px;
     text-transform: uppercase;
     h3 {
+        font-size: 28px;
         margin-left: 10px;
     }
     img {
-        height: 30px;
+        height: 50px;
+        margin-left: 10px;
     }
 }   
 
@@ -29,7 +31,7 @@ body {
     display: grid;
     grid-template-columns: 2fr 5fr 4fr;
     grid-template-rows: auto;
-    gap: 5px;
+    gap: 25px;
     grid-template-areas: 
     "data aktiviteter info";
 }
