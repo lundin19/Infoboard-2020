@@ -1,6 +1,3 @@
-/*
-    Style af aktiviteter
-*/
 #activity-widget {
   width: 100%;
   height: -webkit-fit-content;
@@ -41,7 +38,7 @@
 
 #activity-widget .classes {
   width: calc(100% / 3);
-  height: 60px;
+  height: 5vh;
 }
 
 #activity-widget .card {
@@ -61,15 +58,11 @@
       flex-wrap: wrap;
   text-align: center;
   color: #fff;
-<<<<<<< HEAD
-  height: 4.3vh;
-=======
-  height: 40px;
+  height: 5vh;
 }
 
 #activity-widget .card:last-child {
   margin-top: 13px;
->>>>>>> 3dee294e147e8fef3e59dd8b008fa3e702f329a1
 }
 
 #activity-widget .card:first-of-type {
@@ -123,4 +116,18 @@
 
 #activity-widget .card p.topic {
   width: 30%;
+}
+
+.aktiviteter-container {
+  grid-area: aktiviteter;
+  padding-top: 12px;
+}
+
+.aktiviteter-container .header {
+  background-color: #3F4259;
+  height: 6.5vh;
+  margin-bottom: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

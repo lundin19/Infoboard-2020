@@ -35,16 +35,24 @@ $color-gf1: #bdbdbd;
     .agr, .abi {
         background-color: $color-amu;
     }
-
+    .classes {
+        width: calc(100% / 3);
+        height: 5vh;
+    }
     .card {
         width: 100%;
         height: fit-content;
         list-style: none;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         text-align: center;
         color: #fff;
-        height: 4.3vh;
+        height: 5vh;
+
+        &:last-child {
+            margin-top: 13px;
+        }
 
         &:first-of-type {
             font-weight: 700;
