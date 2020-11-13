@@ -32,7 +32,7 @@
 }
 
 .middleSection #player {
-  width: 660px;
+  width: 34.5vw;
   height: 311px;
   background-color: #3F4259;
   margin-bottom: 13px;
@@ -48,15 +48,15 @@
 }
 
 .middleSection .newsCard {
-  height: 26vh;
+  height: auto;
   margin-bottom: 13px;
   padding-top: 10px;
-  width: 660px;
+  width: 34.5vw;
   background-color: #3F4259;
 }
 
 .middleSection .newsCard .news-date {
-  font-size: 17px;
+  font-size: 1.2rem;
   color: #fff;
   margin-left: 1rem;
 }
@@ -75,8 +75,9 @@
 }
 
 .middleSection .newsCard .qr-text {
-  margin-left: 60%;
-  font-size: 16px;
+  margin-left: 70%;
+  padding-bottom: 1rem;
+  font-size: .9rem;
   color: #fff;
 }
 
@@ -130,7 +131,7 @@
   bottom: 0;
   height: 71px;
   background-color: #414B6C;
-  width: 80.95vw;
+  width: 82.3vw;
 }
 
 .ticker-wrap img {
