@@ -1,8 +1,7 @@
 /* Styling af Vejr */
 .logo-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   margin: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -10,11 +9,10 @@
 }
 
 .logo-container .logo {
-  width: 300px;
+  width: 15vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 300px;
 }
 
 .time {
@@ -48,18 +46,19 @@
 }
 
 .data-container {
+  display: -ms-grid;
+  display: grid;
   grid-area: data;
   margin: 0 auto;
   width: 100%;
-  padding: 20px;
+  padding: 1.1vw;
   background-color: #3F4259;
   /* Styling af Bus tider */
 }
 
 .data-container .bus-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -170,39 +169,6 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #4D5A84;
-}
-
-.data-container .weather-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: white;
-  font-weight: 600;
-  background-color: #3F4259;
-}
-
-.data-container .weather-container .time-date-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.data-container .weather-container .temp-summary-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 40px;
-}
-
-.data-container .weather-container .temp-summary-container .col-left {
-  text-align: center;
 }
 
 .article .medie-container {

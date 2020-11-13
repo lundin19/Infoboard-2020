@@ -51,7 +51,7 @@
           flex-direction: row;
   text-align: center;
   color: #fff;
-  height: 50px;
+  height: 5vh;
 }
 
 #activity-widget .card:first-of-type {
@@ -114,7 +114,7 @@
 
 .aktiviteter-container .header {
   background-color: #3F4259;
-  height: 68px;
+  height: 6.5vh;
   margin-bottom: 13px;
   -webkit-box-align: center;
       -ms-flex-align: center;
