@@ -1,13 +1,8 @@
 /* Styling af Vejr */
 
 .logo-container {
-    display: flex;
-    margin: auto;
-    justify-content: center;
     .logo {
         width: 300px;
-        display: flex;
-        margin-top: 300px;
     }
 }
 
@@ -30,15 +25,13 @@
         align-self: center;
     }
 
-    .icon {
-        min-width: 220px;
-        max-width: 230px;
-        justify-self: start;
-        margin-top: -15%;
-    }
+   
 
 // Grid boxes
 .data-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     grid-area: data;
     margin: 0 auto;
     width: 100%;
