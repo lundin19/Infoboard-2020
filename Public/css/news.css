@@ -1,5 +1,4 @@
 .middleSection {
-  height: 300px;
   padding: 12px 0 0 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10,9 +9,9 @@
   display: grid;
   -ms-grid-columns: 10% auto;
       grid-template-columns: 10% auto;
-  width: 660px;
+  width: 34.3vw;
   background-color: #3F4259;
-  height: 68px;
+  height: 6.5vh;
   margin-bottom: 13px;
 }
 
@@ -49,7 +48,7 @@
 }
 
 .middleSection .newsCard {
-  height: 270px;
+  height: 26vh;
   margin-bottom: 13px;
   padding-top: 10px;
   width: 660px;
@@ -59,20 +58,20 @@
 .middleSection .newsCard .news-date {
   font-size: 17px;
   color: #fff;
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 
 .middleSection .newsCard .news-header {
-  font-size: 28px;
+  font-size: 1.8rem;
   color: #fff;
-  margin: 10px;
+  margin: 1rem;
 }
 
 .middleSection .newsCard .news-content {
-  font-size: 18px;
+  font-size: 1rem;
   color: #fff;
-  margin: 10px;
-  margin-top: 10px;
+  margin: 1rem;
+  margin-top: .5rem;
 }
 
 .middleSection .newsCard .qr-text {
@@ -127,11 +126,11 @@
           align-items: center;
   position: absolute;
   overflow: hidden;
-  right: 0px;
+  right: 0;
   bottom: 0;
   height: 71px;
   background-color: #414B6C;
-  width: 1580px;
+  width: 80.95vw;
 }
 
 .ticker-wrap img {

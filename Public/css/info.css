@@ -1,22 +1,35 @@
 /* Styling af Vejr */
 .logo-container .logo {
   width: 300px;
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.time {
+.logo-container .logo .logo {
+  width: 15vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo-container .time {
   font-size: 45px;
 }
 
-.date {
+.logo-container .date {
   font-size: 45px;
 }
 
-.temp {
+.logo-container .temp {
   font-size: 100px;
   letter-spacing: 5px;
 }
 
-.summary {
+.logo-container .summary {
   font-size: 24px;
   -ms-grid-column-align: start;
       justify-self: start;
@@ -25,29 +38,20 @@
       align-self: center;
 }
 
-.data-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.logo-container .data-container {
+  display: -ms-grid;
+  display: grid;
   grid-area: data;
   margin: 0 auto;
   width: 100%;
-  padding: 20px;
+  padding: 1.1vw;
   background-color: #3F4259;
   /* Styling af Bus tider */
 }
 
-.data-container .bus-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.logo-container .data-container .bus-container {
+  display: -ms-grid;
+  display: grid;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -58,7 +62,7 @@
   font-weight: 600;
 }
 
-.data-container .bus-container .tid {
+.logo-container .data-container .bus-container .tid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 15% 30%;
@@ -75,12 +79,12 @@
   font-weight: 300;
 }
 
-.data-container .bus-container .tid img {
+.logo-container .data-container .bus-container .tid img {
   width: 40px;
   height: 40px;
 }
 
-.data-container .bus-container .tid1 {
+.logo-container .data-container .bus-container .tid1 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 25% 25%;
@@ -96,7 +100,7 @@
   background-color: #4D5A84;
 }
 
-.data-container .bus-container .tid2 {
+.logo-container .data-container .bus-container .tid2 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 25% 25%;
@@ -112,7 +116,7 @@
   background-color: #414B6C;
 }
 
-.data-container .bus-container .tid3 {
+.logo-container .data-container .bus-container .tid3 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 25% 25%;
@@ -128,7 +132,7 @@
   background-color: #4D5A84;
 }
 
-.data-container .bus-container .tid4 {
+.logo-container .data-container .bus-container .tid4 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 25% 25%;
@@ -144,7 +148,7 @@
   background-color: #414B6C;
 }
 
-.data-container .bus-container .tid5 {
+.logo-container .data-container .bus-container .tid5 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 25% 25%;
@@ -160,40 +164,7 @@
   background-color: #4D5A84;
 }
 
-.data-container .weather-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: white;
-  font-weight: 600;
-  background-color: #3F4259;
-}
-
-.data-container .weather-container .time-date-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.data-container .weather-container .temp-summary-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 40px;
-}
-
-.data-container .weather-container .temp-summary-container .col-left {
-  text-align: center;
-}
-
-.article .medie-container {
+.logo-container .article .medie-container {
   height: 300px;
   width: 100%;
   background-image: url("/Public/img/mg.jpg");
@@ -203,27 +174,27 @@
   background-origin: content-box;
 }
 
-.article .nyheder {
+.logo-container .article .nyheder {
   background-color: #414B6C;
   padding: 10px;
   margin: 10px 0;
 }
 
-.article .nyheder .titel {
+.logo-container .article .nyheder .titel {
   text-transform: uppercase;
 }
 
-.article .nyheder .tekst {
+.logo-container .article .nyheder .tekst {
   margin-top: 20px;
 }
 
-#post .bus-container {
+.logo-container #post .bus-container {
   width: 100%;
   color: white;
   font-weight: 600;
 }
 
-#post .bus-container .container-header {
+.logo-container #post .bus-container .container-header {
   width: 100%;
   height: 50px;
   -webkit-box-align: center;
@@ -236,13 +207,13 @@
   background-color: #3F4259;
 }
 
-#post .bus-container .container-header img {
+.logo-container #post .bus-container .container-header img {
   margin: 0 1rem;
   width: 40px;
   height: 40px;
 }
 
-#post .bus-container .container_body .container-content {
+.logo-container #post .bus-container .container_body .container-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,24 +228,24 @@
   background-color: #4D5A84;
 }
 
-#post .bus-container .container_body .container-content h3:first-of-type {
+.logo-container #post .bus-container .container_body .container-content h3:first-of-type {
   margin: 0 0 0 1rem;
 }
 
-#post .bus-container .container_body .container-content h3:last-of-type {
+.logo-container #post .bus-container .container_body .container-content h3:last-of-type {
   text-align: right;
   margin: 0 1rem 0 0;
 }
 
-#post .bus-container .container_body .container-content:first-of-type {
+.logo-container #post .bus-container .container_body .container-content:first-of-type {
   height: 50px;
 }
 
-#post .bus-container .container_body .container-content:first-of-type h3 {
+.logo-container #post .bus-container .container_body .container-content:first-of-type h3 {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-#post .bus-container .container_body .container-content:nth-child(odd) {
+.logo-container #post .bus-container .container_body .container-content:nth-child(odd) {
   background: #414B6C;
 }
