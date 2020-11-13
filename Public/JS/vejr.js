@@ -56,10 +56,7 @@ function buildView(temperature, skyText, hr, min, dd, mm, yyyy) {
     // Date Structure
     today = `${dd}-${mm}-${yyyy}`;
     // Set value
-    // document.querySelector('.time').innerHTML = today;
-    // document.querySelector('.date').innerHTML = `${hr}:${min}`;
-    // document.querySelector('.temp').innerHTML = temperature + '&#176';
-    // document.querySelector('.summary').innerHTML = skyText;
+    
     
     document.querySelector('.time').innerHTML = today;
     document.querySelector('.date').innerHTML = `${hr}:${min}`;
