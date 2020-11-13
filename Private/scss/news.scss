@@ -33,7 +33,7 @@ $duration: 80s;
         }
     }
     #player{
-        width: 660px;
+        width: 34.5vw;
         height: 311px;
         background-color: $card-color;
         margin-bottom: 13px;
@@ -46,14 +46,14 @@ $duration: 80s;
         }
     }
     .newsCard{
-        height: 26vh;
+        height: auto;
         margin-bottom: 13px;
         padding-top: 10px;
-        width: 660px;
+        width: 34.5vw;
         background-color: $card-color;
 
         .news-date {
-            font-size: 17px;
+            font-size: 1.2rem;
             color: $text-color;
             margin-left: 1rem;
         }
@@ -72,8 +72,9 @@ $duration: 80s;
         }
 
         .qr-text {
-            margin-left: 60%;
-            font-size: 16px;
+            margin-left: 70%;
+            padding-bottom: 1rem;
+            font-size: .9rem;
             color: $text-color;
         }
         .news-head {
@@ -112,7 +113,7 @@ $duration: 80s;
     bottom: 0;
     height: 71px;
     background-color: #414B6C;
-    width: 80.95vw;
+    width: 82.3vw;
     img{
         height: 71px;
         z-index: 2;
