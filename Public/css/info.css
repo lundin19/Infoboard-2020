@@ -1,6 +1,5 @@
 /* Styling af Vejr */
-.logo-container .logo {
-  width: 300px;
+.logo-container {
   display: -ms-grid;
   display: grid;
   margin: auto;
@@ -9,27 +8,27 @@
           justify-content: center;
 }
 
-.logo-container .logo .logo {
+.logo-container .logo {
   width: 15vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.logo-container .time {
+.time {
   font-size: 45px;
 }
 
-.logo-container .date {
+.date {
   font-size: 45px;
 }
 
-.logo-container .temp {
+.temp {
   font-size: 100px;
   letter-spacing: 5px;
 }
 
-.logo-container .summary {
+.summary {
   font-size: 24px;
   -ms-grid-column-align: start;
       justify-self: start;
@@ -38,7 +37,15 @@
       align-self: center;
 }
 
-.logo-container .data-container {
+.icon {
+  min-width: 220px;
+  max-width: 230px;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-top: -15%;
+}
+
+.data-container {
   display: -ms-grid;
   display: grid;
   grid-area: data;
@@ -49,7 +56,7 @@
   /* Styling af Bus tider */
 }
 
-.logo-container .data-container .bus-container {
+.data-container .bus-container {
   display: -ms-grid;
   display: grid;
   -webkit-box-orient: vertical;
@@ -62,7 +69,7 @@
   font-weight: 600;
 }
 
-.logo-container .data-container .bus-container .tid {
+.data-container .bus-container .tid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 15% 30%;
@@ -79,12 +86,12 @@
   font-weight: 300;
 }
 
-.logo-container .data-container .bus-container .tid img {
+.data-container .bus-container .tid img {
   width: 40px;
   height: 40px;
 }
 
-.logo-container .data-container .bus-container .tid1 {
+.data-container .bus-container .tid1 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 25% 25%;
@@ -100,7 +107,7 @@
   background-color: #4D5A84;
 }
 
-.logo-container .data-container .bus-container .tid2 {
+.data-container .bus-container .tid2 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 25% 25%;
@@ -116,7 +123,7 @@
   background-color: #414B6C;
 }
 
-.logo-container .data-container .bus-container .tid3 {
+.data-container .bus-container .tid3 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 25% 25%;
@@ -132,7 +139,7 @@
   background-color: #4D5A84;
 }
 
-.logo-container .data-container .bus-container .tid4 {
+.data-container .bus-container .tid4 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 25% 25%;
@@ -148,7 +155,7 @@
   background-color: #414B6C;
 }
 
-.logo-container .data-container .bus-container .tid5 {
+.data-container .bus-container .tid5 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 25% 25%;
@@ -164,7 +171,7 @@
   background-color: #4D5A84;
 }
 
-.logo-container .article .medie-container {
+.article .medie-container {
   height: 300px;
   width: 100%;
   background-image: url("/Public/img/mg.jpg");
@@ -174,27 +181,27 @@
   background-origin: content-box;
 }
 
-.logo-container .article .nyheder {
+.article .nyheder {
   background-color: #414B6C;
   padding: 10px;
   margin: 10px 0;
 }
 
-.logo-container .article .nyheder .titel {
+.article .nyheder .titel {
   text-transform: uppercase;
 }
 
-.logo-container .article .nyheder .tekst {
+.article .nyheder .tekst {
   margin-top: 20px;
 }
 
-.logo-container #post .bus-container {
+#post .bus-container {
   width: 100%;
   color: white;
   font-weight: 600;
 }
 
-.logo-container #post .bus-container .container-header {
+#post .bus-container .container-header {
   width: 100%;
   height: 50px;
   -webkit-box-align: center;
@@ -207,13 +214,13 @@
   background-color: #3F4259;
 }
 
-.logo-container #post .bus-container .container-header img {
+#post .bus-container .container-header img {
   margin: 0 1rem;
   width: 40px;
   height: 40px;
 }
 
-.logo-container #post .bus-container .container_body .container-content {
+#post .bus-container .container_body .container-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,24 +235,24 @@
   background-color: #4D5A84;
 }
 
-.logo-container #post .bus-container .container_body .container-content h3:first-of-type {
+#post .bus-container .container_body .container-content h3:first-of-type {
   margin: 0 0 0 1rem;
 }
 
-.logo-container #post .bus-container .container_body .container-content h3:last-of-type {
+#post .bus-container .container_body .container-content h3:last-of-type {
   text-align: right;
   margin: 0 1rem 0 0;
 }
 
-.logo-container #post .bus-container .container_body .container-content:first-of-type {
+#post .bus-container .container_body .container-content:first-of-type {
   height: 50px;
 }
 
-.logo-container #post .bus-container .container_body .container-content:first-of-type h3 {
+#post .bus-container .container_body .container-content:first-of-type h3 {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.logo-container #post .bus-container .container_body .container-content:nth-child(odd) {
+#post .bus-container .container_body .container-content:nth-child(odd) {
   background: #414B6C;
 }
