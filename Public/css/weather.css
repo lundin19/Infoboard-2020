@@ -12,13 +12,7 @@
 }
 
 .weather-container .time-date-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  font-size: 1.2em;
 }
 
 .weather-container .temp-summary-container {
@@ -53,5 +47,23 @@
 
 .weather-container .time,
 .weather-container .date {
-  font-size: 2em;
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

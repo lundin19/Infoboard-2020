@@ -1,3 +1,5 @@
+// Update time 
+setInterval(updateClock, 1000);
 
 // PROXY => CORS Anywhere helps with accessing data from other websites that is normally forbidden by the same origin policy of web browsers. This is done by proxying requests to these sites via a server (written in Node.js, in this case).
 const proxy = 'https://cors-anywhere.herokuapp.com/';
@@ -21,15 +23,9 @@ fetch(vejrEu)
     // Declare data 
     const {temperature, skyText} = data.CurrentData;
     
-    // Declare new Date
-    let today = new Date();
-    let hr = today.getHours();
-    let min = today.getMinutes();
-    let dd = String(today.getDate()).padStart(2, '0');
-    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-    let yyyy = today.getFullYear();
+    
 
-    buildView(temperature, skyText, hr, min, dd, mm, yyyy)
+    buildView(temperature, skyText)
 })
 .catch(
 );
@@ -52,19 +48,30 @@ fetch(darkSky)
 
 /// View ///
 
-function buildView(temperature, skyText, hr, min, dd, mm, yyyy) {
-    // Date Structure
-    today = `${dd}-${mm}-${yyyy}`;
-    // Set value
+function buildView(temperature, skyText) {
     
-    
-    document.querySelector('.time').innerHTML = today;
-    document.querySelector('.date').innerHTML = `${hr}:${min}`;
     document.querySelector('.temp').innerHTML = temperature + '&#176';
     document.querySelector('.summary').innerHTML = skyText;
     
-    
 }
+
+function updateClock() {
+    // Declare new Date
+    let today = new Date();
+    let hr = String(today.getHours()).padStart(2, '0');
+    let min = String(today.getMinutes()).padStart(2, '0');
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = today.getFullYear();
+    today = `${dd}-${mm}-${yyyy}`;
+
+    para = ':';
+    document.querySelector('.time').innerHTML = today
+    document.querySelector('.hour').innerHTML = `${hr}`;
+    document.querySelector('.para').innerHTML = `${para}`;
+    document.querySelector('.minutes').innerHTML = `${min}`;
+}
+
 /// Icon
 function buildIcon(data) {
     const {icon} = data.currently;                  

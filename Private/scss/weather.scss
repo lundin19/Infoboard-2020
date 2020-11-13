@@ -5,9 +5,7 @@
     font-weight: 600;
     background-color: #3F4259;
     .time-date-container {
-        display: flex;
-    font-size: 20px;
-        justify-content: space-between;
+        font-size: 1.2em;
     }
     .temp-summary-container {
         display: flex;
@@ -31,7 +29,23 @@
     }
     .time,
     .date {
-        font-size: 2em;
+        margin: 0;
+        
+        font-size: 1.8em;
     }
 }
 
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
