@@ -33,9 +33,7 @@ async function loadData() {
 
     //her sætter vi data'ene fra fetchData i et array
     let activityArr = [...await fetchData()];
-
-    //her vælger man hvormange aktiviteter man vil vise
-    let amountOfActivities = 15;
+    let amountOfActivities = 17;
 
     //her finder vi ud af hvilket interval vi er i (hvor vi er i arrayet classTimes)
     const currentTimeOfDay = classTimes.filter(obj => obj.start <= currentTime && obj.end >= currentTime);
@@ -47,12 +45,11 @@ async function loadData() {
     if (currentTimeOfDay.length) {
         listOfActivities = activityArr.filter(activity =>
             activity.timestamp >= currentTimeOfDay[0].start);
-            
-            listOfActivities = listOfActivities.filter((activity, idx) => idx < amountOfActivities - 2);
+                listOfActivities = listOfActivities.filter((activity, idx) => idx < amountOfActivities - 1);
 
-             if(!listOfActivities.length) {
-                getFirstActivities()
-             };
+                if(!listOfActivities.length) {
+                    getFirstActivities()
+                };
 
              //hvis vi ikke er i arrayet så skal den finde timerne fra næste dag
     } else {
@@ -72,7 +69,7 @@ async function loadData() {
 
     //hvis vi er inde for et interval i classTimes så tager vi de filtreret aktiviteter og indsætter(mapper) dem i arrayet activeActivities.
     listOfActivities.map(activity => {
-        const listItem = [activity.datetime, activity.classroom, activity.class, activity.name, activity.friendly_name];
+        const listItem = [activity.timestamp, activity.classroom, activity.class, activity.name, activity.friendly_name];
 
         activeActivities.push(listItem);        
     });
@@ -94,7 +91,7 @@ async function buildActivitiesView() {
     activityWidget.innerHTML = 
         `<li class="card">
             <p class="time">Tid</p> 
-            <p class="location">Lokale</p> 
+            <p class="location">Klasse</p> 
             <p class="class">Hold</p> 
             <p class="topic">Fag</p>
         </li>`;
@@ -103,10 +100,9 @@ async function buildActivitiesView() {
     for (item of activeActivities) {
 
         //her deklererer vi et par variabler
-        let date = new Date(item[0]);
+        let date = new Date(item[0] * 1000);
         let time = `${date.getHours()}:${(date.getMinutes()<10?'0':'') + date.getMinutes()}`;
         let classs = `${item[2]}`;
-
 
         //dette gør at hvis der ikke findet et friendly_name så bruger den bare det normale name
         let topic = item[4];
@@ -125,9 +121,21 @@ async function buildActivitiesView() {
                     <p class="class">${classs}</p> 
                     <p class="topic">${topic}</p>
                 </li>`;
+                break;
             };
         };
     };
+
+    activityWidget.innerHTML += 
+        `<li class="card">
+            <p class="classes we">Webudvikler</p>  
+            <p class="classes abi">AMU</p>  
+            <p class="classes gr">Grafisk Tekniker</p>  
+            <p class="classes dm">Digitale Medier</p>  
+            <p class="classes mg">Mediegrafiker</p>  
+            <p class="classes iw">Anden Uddannelse</p>  
+        </li>`;
 };
 
-setInterval(buildActivitiesView(), 1000*60*10);
+buildActivitiesView();
+setInterval(() => {buildActivitiesView()}, 60000);
